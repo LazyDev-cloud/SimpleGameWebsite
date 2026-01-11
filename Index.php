@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEBULA | Game Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video autoplay muted loop class="bg-video">
+  <source src="assets/bg.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<header class="navbar">
+  <div class="logo">NEBULA</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Games</a>
+    <a href="#">Leaderboard</a>
+    <a href="#">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Next‑Gen Web Gaming</h1>
+  <p>Play. Compete. Dominate.</p>
+  <a href="play.php" class="cta">Launch Game</a>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
