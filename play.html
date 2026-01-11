@@ -10,12 +10,22 @@
 
 <div class="glass-card">
   <h2>Tap Core</h2>
-  <div class="score">Score: <?php echo $_SESSION['score']; ?></div>
-  <form method="POST">
-    <button class="tap-btn" name="tap">⚡ TAP</button>
-  </form>
-  <a class="back" href="index.php">← Exit</a>
+  <div class="score">Score: <span id="score">0</span></div>
+  <button class="tap-btn" id="tapBtn">⚡ TAP</button>
+  <a class="back" href="index.html">← Exit</a>
 </div>
+
+<script>
+  // JavaScript click game logic
+  let score = 0;
+  const scoreDisplay = document.getElementById('score');
+  const tapBtn = document.getElementById('tapBtn');
+
+  tapBtn.addEventListener('click', () => {
+    score++;
+    scoreDisplay.textContent = score;
+  });
+</script>
 
 </body>
 </html>
